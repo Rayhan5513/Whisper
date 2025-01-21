@@ -28,9 +28,9 @@
           Chat
         </NuxtLink>
       </li>
-      <li class="bg-white cursor-pointer text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition">
-          Mode Change
-      </li>
+      <button @click="togglebutton" class=" cursor-pointer text-blue-500 px-4 py-2 rounded ">
+         <UiSwitchThemeButton/>
+      </button>
     </ul>
   </nav>
 </template>

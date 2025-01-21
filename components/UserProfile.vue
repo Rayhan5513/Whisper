@@ -9,10 +9,14 @@
 </template>
 
 <script lang="ts" setup>
+import { useMyUserStore } from '~/store/userStore';
+
   const {user} = defineProps(['user']) ; 
 
+  const userStore = useMyUserStore();
+   
   const ondelete = ()=>{
-        
+        userStore.deleteUser(user) ;
   }
 </script>
 

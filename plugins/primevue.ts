@@ -8,7 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       preset: Aura,
       options: {
         prefix: "p",
-        darkModeSelector: "my-app-dark",
+        darkModeSelector: ".my-app-dark",
         cssLayer: false,
       },
     },
