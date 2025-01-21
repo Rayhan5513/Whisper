@@ -8,10 +8,11 @@
             <ul class="space-y-4">
               <li
                 v-for="chat in chatList":key="chat.id"
-                class="p-3 border rounded-md hover:bg-blue-50 cursor-pointer"
+                class="p-3 border  rounded-md hover:bg-blue-50 cursor-pointer"
               >
 
                 <h3 class="font-medium">{{ chat.name }}</h3>
+                
                 <p class="text-sm text-gray-500 truncate">{{ chat.lastMessage }}</p>
               </li>
 
