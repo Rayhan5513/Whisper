@@ -28,11 +28,17 @@
           Chat
         </NuxtLink>
       </li>
-      <button @click="togglebutton" class=" cursor-pointer text-blue-500 px-4 py-2 rounded ">
-         <UiSwitchThemeButton/>
-      </button>
+      <li>
+  
+    <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" class="sr-only peer" id ="checkBoxId"/>
+        <div class="w-10 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+    </label>
+</li>
     </ul>
   </nav>
 </template>
 <script setup>
+
+
 </script>
