@@ -1,5 +1,15 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // Add the Tailwind CSS file
+  devtools: { enabled: true },
+  ssr: false,
+
+  modules: [
+    "@pinia/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+  ],
+
   css: ['@/assets/css/tailwind.css'],
 
   postcss: {
@@ -9,5 +19,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2025-01-21',
+  compatibilityDate: "2025-01-21",
 });
