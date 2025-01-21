@@ -21,7 +21,7 @@ import { useMyUserStore } from '~/store/userStore';
 const inputName = ref<string>('')
 const inputRole = ref<string>('')
 const inputGender = ref<string>('')
-
+const emit = defineEmits(['submituser'])
 const userStore = useMyUserStore(); 
 const onFormSubmit = () => {
    const user =  {
@@ -34,6 +34,9 @@ const onFormSubmit = () => {
       inputName.value = '' ; 
       inputRole.value = '' ; 
       inputGender.value = ''; 
+    
+      emit('submituser',true)
+
    }  
 };
 </script>
