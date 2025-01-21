@@ -31,6 +31,9 @@ const onFormSubmit = () => {
    }
    if(user.name.length>0 && user.role.length>0 && user.gender.length>0){
       userStore.addUser(user); 
+      inputName.value = '' ; 
+      inputRole.value = '' ; 
+      inputGender.value = ''; 
    }  
 };
 </script>
