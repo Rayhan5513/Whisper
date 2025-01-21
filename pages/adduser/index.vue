@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center gap-4 pt-20 items-center ">
+  <div class="flex flex-col justify-center gap-4 pt-10 items-center ">
    
     <div class="card flex flex-col  justify-center">
         <Button label="User +" @click="visible = true"  />
@@ -21,7 +21,7 @@ import { UiAddform } from '#components';
 import { useMyUserStore } from '~/store/userStore';
 import { Button } from 'primevue';
 import {Dialog} from 'primevue';
-const visible = ref(false);``
+const visible = ref(false);
 
 const userStore = useMyUserStore(); 
 
