@@ -5,16 +5,13 @@ export const useMyUserStore = defineStore('defineUser',()=>{
 
   
   const addUser = (newUser:userType)=>{
-    const existUser = userList.value.find(user=> user===newUser) 
+    const existUser = userList.value.find(user=> user.name===newUser.name) 
+    console.log(existUser)
     if(!existUser){
       userList.value.push(newUser);  
-      useSetItem('userlist',userList.value); 
+      useSetItem("userlist", JSON.stringify(userList.value)); 
     }
   }
-
-
-
-
 
   return {userList ,addUser}
 })
