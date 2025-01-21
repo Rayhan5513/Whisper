@@ -11,8 +11,7 @@
       </NuxtLink>
     </div>
 
-    <!-- Other Buttons on the Right -->
-    <ul class="flex space-x-4 mr-20">
+    <ul class="flex space-x-4 mr-20 items-center">
       <li>
         <NuxtLink
           to="/adduser"
@@ -29,15 +28,11 @@
           Chat
         </NuxtLink>
       </li>
-      <li>
-        <NuxtLink
-          to="/modeChange"
-          class="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition"
-        >
+      <li class="bg-white cursor-pointer text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition">
           Mode Change
-        </NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
-<script setup></script>
+<script setup>
+</script>
