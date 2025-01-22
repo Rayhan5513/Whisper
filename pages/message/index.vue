@@ -1,6 +1,6 @@
 <template>
   <div class="h-[60vh] mt-14 flex flex-col justify-end items-center">
-    <div class="flex flex-col w-2/5 relative max-md:w-5/6 rounded-md">
+    <div class="flex flex-col w-2/5 relative max-md:w-5/6 ">
       <div class="overflow-y-scroll max-h-96 w-full flex flex-col px-4 gap-2">
         <div
           v-for="message in messageStore.messageList"
@@ -9,7 +9,7 @@
           :class="`${!message.user||message.user==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex` "
         >
           <Message :message="message" />
-           <sup class="font-bold ">{{ message.user!=='@user'? message?.user:'' }}</sup>
+           <sup class="font-bold ml-3 ">{{ message.user!=='@user'? message?.user:'' }}</sup>
         </div>
       </div>
 
