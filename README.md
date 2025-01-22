@@ -1,75 +1,52 @@
-# Nuxt Minimal Starter
+# Nuxt ChatApp
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A chat application built with Nuxt 3, featuring a Home, Message, and User page. It includes a shared navigation bar for seamless navigation between pages.
 
-## Setup
 
-Make sure to install dependencies:
 
+
+## Features
+- **Home Page**: Welcome page for the application.
+- **Message Page**: Placeholder for chat messages.
+- **User Page**: Placeholder for user creation, removal, and display of details.
+- **Navbar**: Persistent navigation bar across all pages.
+
+## Prerequisites
+Ensure you have the following installed:
+- **Node.js** (>= 16.10.0)
+- **npm** (>= 7.20.0)
+
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+
+2. Navigate into the project directory:
+    ```bash
+    cd nuxt-chat-app
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Install TailwindCSS.
+
+## Development
+To start the development server:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
 
-# yarn
-yarn dev
+## Customization 
+Add more pages in the pages/ directory.
+Create index.vue for home pages.
+Create message page
+Create user page
+Enhance the Navbar component in components/Navbar.vue. Which hold home ,user,message and mode changing button.
+Update global styles in the app.vue or via Tailwind CSS.
+Using layout.
+User page create user,delete user. Storing data on localhost.
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
