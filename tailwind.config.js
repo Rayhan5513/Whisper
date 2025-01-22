@@ -9,9 +9,14 @@ export default {
     "node_modules/primevue/**/*.{vue,js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+        bebas: "Bebas Neue",
+        spicy: "Spicy Rice",
+      },
+    },
   },
-  plugins: [
-    require("tailwindcss-primeui")],
+  plugins: [require("tailwindcss-primeui")],
 };
 

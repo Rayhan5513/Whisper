@@ -1,14 +1,15 @@
 <template>
   <div class="h-[60vh] mt-14 flex flex-col justify-end items-center">
     <div class="flex flex-col w-full  relative rounded-md">
-      <div class="overflow-y-scroll max-h-96 w-full flex flex-col px-4 gap-2">
+      <div class="overflow-y-scroll max-h-96 w-full flex flex-col items-center  px-4 gap-2">
         <div
           v-for="message in messageStore.messageList"
           :key="message.id"
          
-          :class="`${!message.user||message.user==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex` "
+          :class="`${!message.user||message.user==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex   justify-center items-center` "
         >
-          <Message :message="message" />
+          <DisplayPicture class="mt-5" :message="message"/>
+          <Message class="mt-4" :message="message" />
            <sup class="font-bold ">{{ message.user!=='@user'? message?.user:'' }}</sup>
         </div>
       </div>

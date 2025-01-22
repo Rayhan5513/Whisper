@@ -3,12 +3,12 @@
      <header>
       <nav class="flex justify-between items-center ">
         <NuxtLink to="/">
-           <h1 class="font-spicy text-4xl tracking-wider">Whisper</h1>
+           <h1 class="font-bebas text-5xl tracking-wider">Whisper</h1>
         </NuxtLink>
         <ul class="flex items-center gap-2 ">
-          <InputText class="w-32 max-sm:w-20 h-8 text-sm " type="text" placeholder="Search"  />
-          <NuxtLink to="/users"><Button class="w-12 h-8 ">Users</Button></NuxtLink>
-          <NuxtLink to="/message"><Button class="w-12 h-8 ">Chat</Button></NuxtLink>
+          <InputText class="w-32 max-sm:hidden h-9 text-sm " type="text" placeholder="Search"  />
+          <NuxtLink to="/users"><Button class="w-12 h-9">Users</Button></NuxtLink>
+          <NuxtLink to="/message"><Button class="w-12 h-9 ">Chat</Button></NuxtLink>
            <UiSwitchThemeButton/>
           <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="" size="normal" shape="circle" />
         </ul>
