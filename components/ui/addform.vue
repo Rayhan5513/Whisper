@@ -14,6 +14,7 @@
 </template>
 
 <script lang="ts" setup>
+import { randomColor } from '#imports';
 import { Form } from '@primevue/forms';
 import { InputText } from 'primevue';
 import {Button} from 'primevue'
@@ -31,11 +32,13 @@ const handleGender = (value:string)=>{
     inputGender.value = value ;
 }
 
+
 const onFormSubmit = () => {
    const user =  {
             name:inputName.value ,
             role:inputRole.value ,
-            gender:inputGender.value
+            gender:inputGender.value,
+            color:randomColor()
    }
    if(user.name.length>0 && user.role.length>0 && user.gender.length>0){
       userStore.addUser(user); 

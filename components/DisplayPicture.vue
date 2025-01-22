@@ -1,18 +1,20 @@
 <template>
- <div class="">
-  <Avatar 
- :image="`${!message.user||message.user==='@user'?'https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png':'https://primefaces.org/cdn/primevue/images/organization/walter.jpg'}`" 
- class="mr-2 w-4" 
- size="normal" 
- shape="circle" /> 
+ <div class="flex">
+  <div :title="message.user?.name" 
+    :class="`w-9 h-9 rounded-3xl cursor-pointer flex justify-center items-center text-xl font-semibold text-white ${!message.user||message.user==='@user'?'bg-green-600':message.user.color}`">
+    
+    {{ !message.user || message.user.name === '@user' ? 'ME' : message.user.name.slice(0, 2).toUpperCase() }}
+
+  </div>
  </div>
 </template>
 
 <script lang="ts" setup>
-import { Avatar } from 'primevue';
-const {message} = defineProps(['message'])
+const { message } = defineProps(['message']);
+
+
 </script>
 
-<style>
+<style scoped>
 
 </style>

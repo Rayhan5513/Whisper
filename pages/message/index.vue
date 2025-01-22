@@ -6,11 +6,10 @@
           v-for="message in messageStore.messageList"
           :key="message.id"
          
-          :class="`${!message.user||message.user==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex   justify-center items-center` "
+          :class="`${!message.user||message.user.name==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex gap-2  justify-center items-center` "
         >
           <DisplayPicture class="mt-5" :message="message"/>
           <Message class="mt-4" :message="message" />
-           <sup class="font-bold ">{{ message.user!=='@user'? message?.user:'' }}</sup>
         </div>
       </div>
 
@@ -52,7 +51,7 @@ const handleMessageSubmit = async () => {
   if (inputMessage.value.length > 0) {
     const message = {
       message: inputMessage?.value,
-      user: selectedUser?.value?.name,
+      user: selectedUser?.value
     };
 
     messageStore.addMessage(message);
