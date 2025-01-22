@@ -1,7 +1,7 @@
 <template>
   <div class="shadow-md px-4 py-2 rounded-md" >
      <header>
-      <nav class="flex justify-between items-center ">
+      <nav class="flex justify-between items-center">
         <NuxtLink to="/">
            <h1 class="font-bebas text-5xl tracking-wider">Whisper</h1>
         </NuxtLink>
