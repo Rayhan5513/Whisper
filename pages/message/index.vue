@@ -5,14 +5,11 @@
         <div
           v-for="message in messageStore.messageList"
           :key="message.id"
-          :class="{
-            'ml-auto': !message.user || message.user === '@user',
-            'mr-auto': message.user && message.user !== '@user',
-          }"
-          class="space-y-4 messagecart flex "
+         
+          :class="`${!message.user||message.user==='@user'?'ml-auto':'mr-auto'} space-y-4 messagecart flex` "
         >
           <Message :message="message" />
-           <sup class="font-bold ">{{ message?.user }}</sup>
+           <sup class="font-bold ">{{ message.user!=='@user'? message?.user:'' }}</sup>
         </div>
       </div>
 
