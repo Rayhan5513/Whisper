@@ -1,5 +1,5 @@
 <template>
-  <div class="" >
+  <div class="shadow-md px-4 py-2 rounded-md" >
      <header>
       <nav class="flex justify-between items-center ">
         <NuxtLink to="/">
