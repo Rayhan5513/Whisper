@@ -1,6 +1,6 @@
 <template>
   <div class="h-[60vh] mt-14 flex flex-col justify-end items-center">
-    <div class="flex flex-col w-2/5 relative max-md:w-5/6 rounded-md">
+    <div class="flex flex-col w-full  relative rounded-md">
       <div class="overflow-y-scroll max-h-96 w-full flex flex-col px-4 gap-2">
         <div
           v-for="message in messageStore.messageList"
