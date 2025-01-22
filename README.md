@@ -44,7 +44,7 @@ npm run dev
 Add more pages in the pages/ directory.
 Create index.vue for home pages.
 Create message page
-Create user page
+Create user page 
 Enhance the Navbar component in components/Navbar.vue. Which hold home ,user,message and mode changing button.
 Update global styles in the app.vue or via Tailwind CSS.
 Using layout.
