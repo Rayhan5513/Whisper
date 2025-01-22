@@ -1,41 +1,21 @@
 <template>
-  <nav
-    class="bg-[#ff6666] text-white flex justify-between items-center h-20 m-3 p-10 mt-4"
-  >
-    <div>
-      <NuxtLink
-        to="/"
-        class="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition"
-      >
-        Home
-      </NuxtLink>
-    </div>
-
-    <ul class="flex space-x-4 mr-20 items-center">
-      <li>
-        <NuxtLink
-          to="/adduser"
-          class="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition"
-        >
-          User
+  <div >
+     <header>
+      <nav class="flex justify-between items-center ">
+        <NuxtLink to="/">
+           <h1 class="font-spicy text-4xl tracking-wider">Whisper</h1>
         </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
-          to="/message"
-          class="bg-white text-blue-500 px-4 py-2 rounded shadow hover:bg-blue-600 hover:text-white transition"
-        >
-          Chat
-        </NuxtLink>
-      </li>
-      <li>
-  
-  <UiSwitchThemeButton/>
-</li>
-    </ul>
-  </nav>
+        <ul class="flex items-center gap-2 ">
+          <InputText class="w-32 max-sm:w-20 h-8 text-sm " type="text" placeholder="Search"  />
+           <UiSwitchToggle/>
+          <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="" size="normal" shape="circle" />
+        </ul>
+      </nav>
+    </header>
+  </div>
 </template>
-<script setup>
-
-
+<script lang="ts"  setup>
+import Avatar from 'primevue/avatar';
 </script>
+<style>
+</style>
