@@ -62,7 +62,8 @@ const handleMessageSubmit = async () => {
 };
 const lastMessageIntoView = () => {
   const messageCart = document.querySelectorAll(".messagecart");
-  messageCart[messageCart.length - 1].scrollIntoView({ behavior: "smooth" });
+  if(messageCart.length>0){
+    messageCart[messageCart.length - 1].scrollIntoView({ behavior: "smooth" });}
 };
 onMounted(() => {
   lastMessageIntoView();
