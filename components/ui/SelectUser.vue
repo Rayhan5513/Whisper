@@ -18,7 +18,8 @@ const users = ref<userType[]>(userStore.userList);
 const atUserOption = ref<userType>({
     name: "@user",
     role: "admin",
-    gender:'male' 
+    gender:'male' ,
+    color:'bg-green-600'
 });
 const options = computed(() => [atUserOption.value, ...users.value]);
 
