@@ -1,4 +1,4 @@
-# Nuxt ChatApp
+# Whisper
 
 A chat application built with Nuxt 3, featuring a Home, Message, and User page. It includes a shared navigation bar for seamless navigation between pages.
 
