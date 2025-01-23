@@ -22,6 +22,10 @@
             class="flex-1 border rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-300"
             @keydown.enter="handleMessageSubmit"
           />
+          
+
+          
+
           <UiSelectUser @selectedUser="handleSelectUser" />
           <Button
             @click="handleMessageSubmit"
